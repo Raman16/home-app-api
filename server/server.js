@@ -5,6 +5,7 @@ const express= require('express');
 const {mongoose}=require('./db/mongoose');
 const {Users}=require('./model/Users');
 
+const port=process.env.PORT || 3000;
 
 var app=express();
 
@@ -17,8 +18,8 @@ app.post('/properties',(req,res)=>{
 });
 
 
-var server=app.listen(3008,()=>{
-   console.log('Started on  port 3000');   
+var server=app.listen(port,()=>{
+   console.log(`Started on  port ${port}`);   
 });
 //Error log file below
  server.on('error',(err)=>{

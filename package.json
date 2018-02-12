@@ -2,6 +2,9 @@
   "name": "nodo-todo-api",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts":{
+      "start":"node server.js"
+   },
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.15.2",
